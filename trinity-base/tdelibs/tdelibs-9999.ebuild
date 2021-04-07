@@ -153,7 +153,6 @@ src_install() {
 	for libdir in $(get_all_libdirs); do
 		libdirs="${TDEDIR}/${libdir}:${libdirs}"
 	done
-	libdirs+="${TDEDIR}/$(get_libdir)/trinity"
 
 	cat <<EOF >"${D}/etc/env.d/45trinitypaths-${SLOT}" # number goes down with version upgrade
 PATH=${TDEDIR}/bin

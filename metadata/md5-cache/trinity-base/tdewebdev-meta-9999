@@ -1,0 +1,8 @@
+DEFINED_PHASES=-
+DESCRIPTION=Trinity Software meta package for web development (tdewebdev)
+EAPI=7
+HOMEPAGE=https://trinitydesktop.org/
+LICENSE=metapackage
+RDEPEND=~trinity-base/quanta-9999 ~trinity-base/kimagemapeditor-9999 ~trinity-base/klinkstatus-9999 ~trinity-base/kommander-9999 ~trinity-base/kxsldbg-9999 ~trinity-base/tdewebdev-doc-9999
+SLOT=14
+_md5_=8e1627d6e798b3f1579502f564643865

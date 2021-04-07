@@ -5,7 +5,7 @@
 EAPI="7"
 
 TRINITY_MODULE_NAME="tdebase"
-TSM_EXTRACT_ALSO="kcheckpass/ translations/ FindXscreensaver.cmake"
+TSM_EXTRACT_ALSO="kcheckpass/ translations/"
 inherit trinity-meta-2
 
 DESCRIPTION="The part of TDE UI that handles icons, desktop, screensaver etc"

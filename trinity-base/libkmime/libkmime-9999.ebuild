@@ -9,7 +9,3 @@ TSM_EXTRACT_ALSO="libtdepim/"
 inherit trinity-meta-2
 
 DESCRIPTION="Trinity kmime library for Message Handling"
-
-if [[ ${PV} != *9999* ]] ; then
-	KEYWORDS="~amd64 ~x86"
-fi

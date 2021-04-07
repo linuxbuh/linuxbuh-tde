@@ -6,14 +6,10 @@ EAPI="7"
 
 TRINITY_MODULE_NAME="tdepim"
 TRINITY_SUBMODULE="tdeioslave"
-TSM_EXTRACT_ALSO="libtdepim/ libemailfunctions/ libkmime/ translations/"
+TSM_EXTRACT_ALSO="libemailfunctions/ libkmime/"
 inherit trinity-meta-2
 
 DESCRIPTION="PIM Trinity TDEIOslaves"
-
-if [[ ${PV} != *9999* ]] ; then
-	KEYWORDS="~amd64 ~x86"
-fi
 
 IUSE="sasl sieve"
 

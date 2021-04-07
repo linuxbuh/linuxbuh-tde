@@ -1,0 +1,8 @@
+DEFINED_PHASES=-
+DESCRIPTION=tdeartwork meta package - merge this to pull in all tdeartwork-derived packages
+EAPI=7
+HOMEPAGE=https://trinitydesktop.org/
+LICENSE=metapackage
+RDEPEND=~trinity-base/tdeartwork-emoticons-9999 ~trinity-base/tdeartwork-icewm-themes-9999 ~trinity-base/tdeartwork-icon-themes-9999 ~trinity-base/tdeartwork-kworldclock-9999 ~trinity-base/tdeartwork-sounds-9999 ~trinity-base/tdeartwork-styles-9999 ~trinity-base/tdeartwork-tdescreensaver-9999 ~trinity-base/tdeartwork-twin-styles-9999 ~trinity-base/tdeartwork-wallpapers-9999
+SLOT=14
+_md5_=3853470edecdb80b7ff2f01272d9abc1

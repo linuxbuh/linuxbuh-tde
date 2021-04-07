@@ -28,7 +28,7 @@ RDEPEND="${COMMON_DEPEND}
 	~trinity-base/konqueror-${PV}
 	pam? ( trinity-base/tdebase-pam )"
 
-TSM_EXTRACT_ALSO="kcheckpass/ FindXscreensaver.cmake"
+TSM_EXTRACT_ALSO="kcheckpass/"
 
 src_configure() {
 	mycmakeargs=(

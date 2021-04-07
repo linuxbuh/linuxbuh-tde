@@ -1,0 +1,8 @@
+DEFINED_PHASES=-
+DESCRIPTION=tdegames metapackage - merge this to pull in all tdegames-derived packages
+EAPI=7
+HOMEPAGE=https://trinitydesktop.org/
+LICENSE=metapackage
+RDEPEND=~trinity-base/atlantik-9999 ~trinity-base/kasteroids-9999 ~trinity-base/katomic-9999 ~trinity-base/kbackgammon-9999 ~trinity-base/kbattleship-9999 ~trinity-base/kblackbox-9999 ~trinity-base/kbounce-9999 ~trinity-base/kenolaba-9999 ~trinity-base/kfouleggs-9999 ~trinity-base/kgoldrunner-9999 ~trinity-base/kjumpingcube-9999 ~trinity-base/klickety-9999 ~trinity-base/klines-9999 ~trinity-base/kmahjongg-9999 ~trinity-base/kmines-9999 ~trinity-base/knetwalk-9999 ~trinity-base/kolf-9999 ~trinity-base/konquest-9999 ~trinity-base/kpat-9999 ~trinity-base/kpoker-9999 ~trinity-base/kreversi-9999 ~trinity-base/ksame-9999 ~trinity-base/kshisen-9999 ~trinity-base/ksirtet-9999 ~trinity-base/ksmiletris-9999 ~trinity-base/ksnake-9999 ~trinity-base/ksokoban-9999 ~trinity-base/kspaceduel-9999 ~trinity-base/ktron-9999 ~trinity-base/ktuberling-9999 ~trinity-base/libtdegames-9999 ~trinity-base/lskat-9999 ~trinity-base/tdegames-doc-9999 ~trinity-base/twin4-9999
+SLOT=14
+_md5_=11cacf48130aef4c0536c1a71a9e088c

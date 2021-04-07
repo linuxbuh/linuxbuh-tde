@@ -1,0 +1,8 @@
+DEFINED_PHASES=-
+DESCRIPTION=Metapackage Trinity Software Development Kit (SDK)
+EAPI=7
+HOMEPAGE=http://www.trinitydesktop.org/
+LICENSE=metapackage
+RDEPEND=~trinity-base/cervisia-9999 ~trinity-base/kapptemplate-9999 ~trinity-base/kbabel-9999 ~trinity-base/kbugbuster-9999 ~trinity-base/tdecachegrind-9999 ~trinity-base/tdesdk-scripts-9999 ~trinity-base/kmtrace-9999 ~trinity-base/kompare-9999 ~trinity-base/kspy-9999 ~trinity-base/kuiviewer-9999 ~trinity-base/poxml-9999 ~trinity-base/umbrello-9999 ~trinity-base/tdeunittest-9999 ~trinity-base/tdesdk-doc-9999
+SLOT=14
+_md5_=fc758e91ff7e5552b0128952bce2dd45

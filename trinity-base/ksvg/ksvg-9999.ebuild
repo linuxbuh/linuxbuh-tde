@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Copyright 2020 The Trinity Desktop Project
 # Distributed under the terms of the GNU General Public License v2
 
@@ -13,7 +13,7 @@ DEPEND="
 	dev-libs/fribidi
 	media-libs/fontconfig
 	media-libs/freetype
-	media-libs/lcms:2
+	media-libs/lcms:0
 	~media-libs/libart_lgpl-${PV}
 "
 RDEPEND="${DEPEND}"

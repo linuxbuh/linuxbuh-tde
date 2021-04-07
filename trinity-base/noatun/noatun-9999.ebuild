@@ -11,7 +11,7 @@ inherit trinity-meta-2
 DESCRIPTION="Media player featuring audio effects, graphic equalizer and network transparency"
 HOMEPAGE="https://trinitydesktop.org/"
 
-RDEPEND="~trinity-base/tdemultimedia-arts-${PV}"
+RDEPEND=""
 DEPEND="${RDEPEND}
 	x11-libs/libXext
 "

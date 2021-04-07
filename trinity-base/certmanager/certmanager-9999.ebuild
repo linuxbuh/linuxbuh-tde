@@ -10,10 +10,6 @@ inherit trinity-meta-2
 
 DESCRIPTION="Trinity certificate manager gui"
 
-if [[ ${PV} != *9999* ]] ; then
-	KEYWORDS="~amd64 ~x86"
-fi
-
 COMMON_DEPEND="~trinity-base/libtdenetwork-${PV}
 	app-crypt/gpgme
 	app-crypt/gnupg"

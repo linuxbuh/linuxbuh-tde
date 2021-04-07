@@ -10,10 +10,6 @@ inherit trinity-meta-2
 
 DESCRIPTION="Trinity PIM exchange library"
 
-if [[ ${PV} != *9999* ]] ; then
-	KEYWORDS="~amd64 ~x86"
-fi
-
 DEPEND="
 	~trinity-base/ktnef-${PV}
 	~trinity-base/libkcal-${PV}

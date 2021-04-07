@@ -9,15 +9,11 @@ TSM_EXTRACT_ALSO="certmanager/lib/
 	libtdepim/
 	libtdenetwork/
 	libkcal/
-	libemailfunctions/
-	translations/"
+	libemailfunctions/"
 inherit trinity-meta-2
 
 DESCRIPTION="The Trinity Address Book"
 
-if [[ ${PV} != *9999* ]] ; then
-	KEYWORDS="~amd64 ~x86"
-fi
 IUSE="gnokii"
 
 DEPEND="

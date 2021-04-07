@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst prepare setup
+DEPEND=virtual/jpeg:= media-libs/freetype media-libs/libpng:= sys-libs/zlib x11-libs/libXft x11-libs/libXcursor x11-libs/libXi x11-libs/libXmu x11-libs/libICE x11-libs/libXext x11-libs/libXt x11-libs/libX11 x11-libs/libXrandr x11-libs/libSM cups? ( net-print/cups ) firebird? ( dev-db/firebird ) mysql? ( virtual/mysql ) nas? ( media-libs/nas ) nis? ( net-libs/libnsl ) opengl? ( virtual/opengl virtual/glu ) postgres? ( dev-db/postgresql:= ) sqlite? ( dev-db/sqlite:= ) mng? ( media-libs/libmng ) glib? ( dev-libs/glib ) fontconfig? ( media-libs/fontconfig ) xinerama? ( x11-libs/libXinerama ) xrandr? ( x11-libs/libXrandr ) x11-base/xorg-proto
+DESCRIPTION=Trinity's Qt3 fork - a comprehensive C++ application development framework
+EAPI=7
+HOMEPAGE=https://trinitydesktop.org/
+IUSE=cups debug doc examples firebird ipv6 mysql nas nis +opengl postgres styles imext sqlite +xinerama tablet +xrandr glib mng fontconfig +hiddenvisibility
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( GPL-2 GPL-3 )
+RDEPEND=virtual/jpeg:= media-libs/freetype media-libs/libpng:= sys-libs/zlib x11-libs/libXft x11-libs/libXcursor x11-libs/libXi x11-libs/libXmu x11-libs/libICE x11-libs/libXext x11-libs/libXt x11-libs/libX11 x11-libs/libXrandr x11-libs/libSM cups? ( net-print/cups ) firebird? ( dev-db/firebird ) mysql? ( virtual/mysql ) nas? ( media-libs/nas ) nis? ( net-libs/libnsl ) opengl? ( virtual/opengl virtual/glu ) postgres? ( dev-db/postgresql:= ) sqlite? ( dev-db/sqlite:= ) mng? ( media-libs/libmng ) glib? ( dev-libs/glib ) fontconfig? ( media-libs/fontconfig ) xinerama? ( x11-libs/libXinerama ) xrandr? ( x11-libs/libXrandr )
+RESTRICT=mirror
+SLOT=3.5
+SRC_URI=http://www.mirrorservice.org/sites/trinitydesktop.org/trinity/releases/R14.0.8/main/dependencies/tqt3-trinity-14.0.8.tar.xz
+_eclasses_=edos2unix	33e347e171066657f91f8b0c72ec8773	eutils	2d5b3f4b315094768576b6799e4f926e	l10n	8cdd85e169b835d518bc2fd59f780d8e	multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	wrapper	4251d4c84c25f59094fd557e0063a974
+_md5_=e9cd4e992015d8ab583a6214e10a609c

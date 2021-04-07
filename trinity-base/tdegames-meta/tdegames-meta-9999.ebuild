@@ -43,6 +43,5 @@ RDEPEND="
 	~trinity-base/ktuberling-${PV}
 	~trinity-base/libtdegames-${PV}
 	~trinity-base/lskat-${PV}
-	~trinity-base/tdegames-doc-${PV}
 	~trinity-base/twin4-${PV}
 "

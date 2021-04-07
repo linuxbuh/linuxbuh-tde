@@ -18,15 +18,11 @@ TSM_EXTRACT_ALSO="
 	libkpgp/
 	libkmime/
 	libksieve/
-	kmail/
-	translations/"
+	kmail/"
 inherit trinity-meta-2
 
 DESCRIPTION="The email client for Trinity"
 
-if [[ ${PV} != *9999* ]] ; then
-	KEYWORDS="~amd64 ~x86"
-fi
 IUSE="crypt imap mbox sasl"
 
 # The magic of KMail, is fully done by individual TDEIOSlaves,
@@ -51,12 +47,6 @@ RDEPEND="${DEPEND}
 	mbox? ( ~trinity-base/tdepim-tdeioslaves-${PV} )
 	sasl? ( ~trinity-base/tdebase-tdeioslaves-${PV}[sasl=] )
 "
-
-src_install() {
-	trinity-meta-2_src_install
-	insinto "${TDEDIR}/include/kmail"
-	doins "${BUILD_DIR}/kmail"/*.h
-}
 
 pkg_postinst () {
 	if use crypt; then

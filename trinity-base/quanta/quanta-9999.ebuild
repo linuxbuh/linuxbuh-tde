@@ -56,7 +56,7 @@ src_install() {
 	for i in css html javascript ; do
 	pushd $i >/dev/null || die
 	./install.sh <<EOF
-${D}/${TDEDIR}/share/apps/quanta/doc
+"${D}/${TDEDIR}/share/apps/quanta/doc"
 EOF
 	popd >/dev/null || die
 	rm -rf $i || die

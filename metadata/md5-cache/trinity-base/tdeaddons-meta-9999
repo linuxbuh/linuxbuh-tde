@@ -1,0 +1,8 @@
+DEFINED_PHASES=-
+DESCRIPTION=tdeaddons metapackage - merge this to pull in all tdeaddons-derived packages
+EAPI=7
+HOMEPAGE=https://trinitydesktop.org/
+LICENSE=metapackage
+RDEPEND=~trinity-base/atlantikdesigner-9999 ~trinity-base/kaddressbook-plugins-9999 ~trinity-base/kate-plugins-9999 ~trinity-base/kicker-applets-9999 ~trinity-base/knewsticker-scripts-9999 ~trinity-base/konq-plugins-9999 ~trinity-base/ksig-9999 ~trinity-base/renamedlg-plugins-9999 ~trinity-base/tdeaddons-doc-9999 ~trinity-base/tdeaddons-tdefile-plugins-9999
+SLOT=14
+_md5_=c05a9d4107da46f3a667d19952a34bdb

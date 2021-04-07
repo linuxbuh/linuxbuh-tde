@@ -5,14 +5,10 @@
 EAPI="7"
 
 TRINITY_MODULE_NAME="tdepim"
-TSM_EXTRACT_ALSO="libtdepim/ libemailfunctions/ libkpgp/ libkmime/ translations/"
+TSM_EXTRACT_ALSO="libtdepim/ libemailfunctions/ libkpgp/ libkmime/"
 inherit trinity-meta-2
 
 DESCRIPTION="A newsreader for TDE"
-
-if [[ ${PV} != *9999* ]] ; then
-	KEYWORDS="~amd64 ~x86"
-fi
 
 DEPEND="
 	~trinity-base/ktnef-${PV}

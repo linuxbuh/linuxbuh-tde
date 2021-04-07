@@ -7,7 +7,7 @@ EAPI="7"
 TRINITY_MODULE_NAME="tdewebdev"
 TRINITY_BUILD_ADMIN="yes"
 
-inherit trinity-meta-2 flag-o-matic
+inherit trinity-meta-2
 
 DESCRIPTION="Graphical XSLT debugger for TDE [Trinity]"
 HOMEPAGE="https://trinitydesktop.org/"

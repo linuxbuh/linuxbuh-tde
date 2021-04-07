@@ -10,10 +10,6 @@ inherit trinity-meta-2
 
 DESCRIPTION="Trinity PGP library"
 
-if [[ ${PV} != *9999* ]] ; then
-	KEYWORDS="~amd64 ~x86"
-fi
-
 DEPEND="
 	dev-libs/libical
 	~trinity-base/ktnef-${PV}

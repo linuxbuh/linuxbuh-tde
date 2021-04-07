@@ -10,9 +10,5 @@ inherit trinity-meta-2
 
 DESCRIPTION="Library common to many tdepim apps interacting to network"
 
-if [[ ${PV} != *9999* ]] ; then
-	KEYWORDS="~amd64 ~x86"
-fi
-
 DEPEND="app-crypt/gpgme"
 RDEPEND="${DEPEND}"
