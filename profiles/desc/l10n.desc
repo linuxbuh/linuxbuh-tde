@@ -1,0 +1,19 @@
+# Copyright 2020 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+# This file contains descriptions of L10N USE_EXPAND flags.
+
+# TODO: Add descriptions and/or figure out these are actually valid!
+ca@valencia -
+csb -
+en_GB -
+nds -
+pl_PL -
+pt_BR -
+se -
+sl_SI -
+sr@Latn -
+uz@cyrillic -
+wa -
+zh_CN -
+zh_TW -

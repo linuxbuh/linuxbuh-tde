@@ -1,0 +1,2 @@
+#broken but being fixed as of Jan. 2019
+trinity-base/tdelibs cryptsetup

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>fatzer2@gmail.com</email>
+		<name>Alexander Golubev</name>
+	</maintainer>
+	<use>
+		<flag name="glib">Enable support for dev-libs/glib-based mainloop</flag>
+		<flag name="hiddenvisibility">Makes Trinity symbols hidden by default</flag>
+		<flag name="imext">Enable binary incompatible version of immodule for Qt</flag>
+		<flag name="styles">Enable build of styles</flag>
+		<flag name="tablet">Enable tablet support</flag>
+	</use>
+</pkgmetadata>
