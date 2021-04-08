@@ -1,8 +1,0 @@
-DEFINED_PHASES=-
-DESCRIPTION=tdeutils metapackage - merge this to pull in all tdeutils-derived packages
-EAPI=7
-HOMEPAGE=https://trinitydesktop.org/
-LICENSE=metapackage
-RDEPEND=~trinity-base/ark-9999 ~trinity-base/kcalc-9999 ~trinity-base/kcharselect-9999 ~trinity-base/kdf-9999 ~trinity-base/kedit-9999 ~trinity-base/kfloppy-9999 ~trinity-base/kgpg-9999 ~trinity-base/khexedit-9999 ~trinity-base/kjots-9999 ~trinity-base/klaptopdaemon-9999 ~trinity-base/kmilo-9999 ~trinity-base/kregexpeditor-9999 ~trinity-base/ksim-9999 ~trinity-base/ktimer-9999 ~trinity-base/superkaramba-9999 ~trinity-base/tdefilereplace-9999 ~trinity-base/tdelirc-9999 ~trinity-base/tdeutils-doc-9999 ~trinity-base/tdewallet-9999
-SLOT=14
-_md5_=ad2639099cd499e4cfa77eac5660d91a

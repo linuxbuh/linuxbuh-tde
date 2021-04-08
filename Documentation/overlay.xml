@@ -1,9 +1,0 @@
-<?xml version="1.0" ?>
-<repositories version="1.0">
-	<repo priority="50" quality="experimental" status="unofficial">
-		<name>trinity-official</name>
-		<description>Official Gentoo overlay from the TDE team for Trinity Desktop Environment, a fork of KDE3</description>
-		<homepage>https://www.trinitydesktop.org</homepage>
-		<source type="git">https://mirror.git.trinitydesktop.org/gitea/TDE/tde-packaging-gentoo.git</source>
-	</repo>
-</repositories>

@@ -1,8 +1,0 @@
-DEFINED_PHASES=-
-DESCRIPTION=tdegraphics metapackage - merge this to pull in all tdegraphics-derived packages
-EAPI=7
-HOMEPAGE=https://trinitydesktop.org/
-LICENSE=metapackage
-RDEPEND=~trinity-base/kamera-9999 ~trinity-base/kcoloredit-9999 ~trinity-base/kdvi-9999 ~trinity-base/kfax-9999 ~trinity-base/kgamma-9999 ~trinity-base/kghostview-9999 ~trinity-base/kmrml-9999 ~trinity-base/kolourpaint-9999 ~trinity-base/kooka-9999 ~trinity-base/kpdf-9999 ~trinity-base/kpovmodeler-9999 ~trinity-base/kruler-9999 ~trinity-base/ksnapshot-9999 ~trinity-base/ksvg-9999 ~trinity-base/kuickshow-9999 ~trinity-base/kview-9999 ~trinity-base/kviewshell-9999 ~trinity-base/libkscan-9999 ~trinity-base/tdegraphics-doc-9999 ~trinity-base/tdegraphics-tdefile-plugins-9999 ~trinity-base/tdeiconedit-9999
-SLOT=14
-_md5_=aa7ee820644c908bd51a7eb6c45e2f66

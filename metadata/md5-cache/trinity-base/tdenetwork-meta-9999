@@ -1,8 +1,0 @@
-DEFINED_PHASES=-
-DESCRIPTION=tdenetwork metapackage - merge this to pull in all tdenetwork-derived packages
-EAPI=7
-HOMEPAGE=https://trinitydesktop.org/
-LICENSE=metapackage
-RDEPEND=~trinity-base/dcoprss-9999 ~trinity-base/kdict-9999 ~trinity-base/kget-9999 ~trinity-base/knewsticker-9999 ~trinity-base/kopete-9999 ~trinity-base/kpf-9999 ~trinity-base/kppp-9999 ~trinity-base/krdc-9999 ~trinity-base/krfb-9999 ~trinity-base/ksirc-9999 ~trinity-base/ktalkd-9999 ~trinity-base/kwifimanager-9999 ~trinity-base/librss-9999 ~trinity-base/lisa-9999 ~trinity-base/tdednssd-9999 ~trinity-base/tdenetwork-doc-9999 ~trinity-base/tdenetwork-filesharing-9999 ~trinity-base/tdenetwork-tdefile-plugins-9999
-SLOT=14
-_md5_=35a244ca29c459529f3fdd4c4fdd77dd

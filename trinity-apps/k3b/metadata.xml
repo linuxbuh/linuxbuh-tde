@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
-<pkgmetadata>
-	<!-- maintainer-needed -->
-	<use>
-		<flag name="emovix">Enable burning support for eMoviX images</flag>
-		<flag name="ffmpeg-all-codecs">Enable WITH_FFMPEG_ALL_CODECS cmake flag (no additional dependencies)</flag>
-	</use>
-</pkgmetadata>

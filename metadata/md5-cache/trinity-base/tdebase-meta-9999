@@ -1,8 +1,0 @@
-DEFINED_PHASES=-
-DESCRIPTION=tdebase metapackage - merge this to pull in all tdebase-derived packages
-EAPI=7
-HOMEPAGE=https://trinitydesktop.org/
-LICENSE=metapackage
-RDEPEND=~trinity-base/drkonqi-9999 ~trinity-base/kappfinder-9999 ~trinity-base/kate-9999 ~trinity-base/kcheckpass-9999 ~trinity-base/kcminit-9999 ~trinity-base/kcontrol-9999 ~trinity-base/kdcop-9999 ~trinity-base/kdesktop-9999 ~trinity-base/kdialog-9999 ~trinity-base/kfind-9999 ~trinity-base/khelpcenter-9999 ~trinity-base/khotkeys-9999 ~trinity-base/kicker-9999 ~trinity-base/klipper-9999 ~trinity-base/kmenuedit-9999 ~trinity-base/knetattach-9999 ~trinity-base/konqueror-9999 ~trinity-base/konsole-9999 ~trinity-base/kpager-9999 ~trinity-base/kpersonalizer-9999 ~trinity-base/kreadconfig-9999 ~trinity-base/krootbacking-9999 ~trinity-base/ksmserver-9999 ~trinity-base/ksplashml-9999 ~trinity-base/kstart-9999 ~trinity-base/ksysguard-9999 ~trinity-base/ksystraycmd-9999 ~trinity-base/ktip-9999 ~trinity-base/kxkb-9999 ~trinity-base/libkonq-9999 ~trinity-base/nsplugins-9999 ~trinity-base/tdebase-data-9999 ~trinity-base/tdebase-starttde-9999 ~trinity-base/tdebase-tdeioslaves-9999 ~trinity-base/tdedebugdialog-9999 ~trinity-base/tdeeject-9999 ~trinity-base/tdeinit-9999 ~trinity-base/tdepasswd-9999 ~trinity-base/tdeprint-9999 ~trinity-base/tdescreensaver-9999 ~trinity-base/tdesu-9999 ~trinity-base/tdm-9999 ~trinity-base/tqt3integration-9999 ~trinity-base/twin-9999
-SLOT=14
-_md5_=b6708f4eb3a2c0162c196510c3dbad83
