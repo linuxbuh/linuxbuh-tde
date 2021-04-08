@@ -10,7 +10,7 @@ DESCRIPTION="TDE sound recorder"
 KEYWORDS="~amd64 ~x86"
 IUSE="encode mp3 vorbis"
 
-DEPEND="
+DEPEND="~trinity-base/tdemultimedia-arts-${PV}
 	encode? ( mp3? ( media-sound/lame )
 			vorbis? ( media-libs/libvorbis ) )"
 RDEPEND="${DEPEND}"

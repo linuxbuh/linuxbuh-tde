@@ -14,6 +14,7 @@ DEPEND="~trinity-base/libkcddb-${PV}
 
 # External encoders used - no optional compile-time support
 RDEPEND="${RDEPEND}
+	~trinity-base/tdemultimedia-tdeioslaves-${PV}
 	encode? ( vorbis? ( media-sound/vorbis-tools )
 			flac? ( media-libs/flac )
 			mp3? ( media-sound/lame ) )"
