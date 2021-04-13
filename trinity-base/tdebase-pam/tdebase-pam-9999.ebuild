@@ -1,7 +1,7 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 inherit pam
 
@@ -18,9 +18,9 @@ RDEPEND="${DEPEND}"
 
 src_install() {
 	if use elogind ; then
-		newpamd "${FILESDIR}/tde-elogind.pam-${PV}" tde
+		newpamd "${FILESDIR}/tde-elogind.pam-7" tde
 	else
-		newpamd "${FILESDIR}/tde.pam-${PV}" tde
+		newpamd "${FILESDIR}/tde.pam-7" tde
 	fi
 	newpamd "${FILESDIR}/tde-np.pam-6" tde-np
 }
