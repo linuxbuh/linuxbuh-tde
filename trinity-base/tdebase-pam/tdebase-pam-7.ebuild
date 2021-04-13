@@ -8,6 +8,7 @@ inherit pam
 DESCRIPTION="pam.d files used by several Trinity components"
 HOMEPAGE="https://trinitydesktop.org/"
 
+S="${WORKDIR}"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~alpha amd64 hppa ~ia64 ~mips ppc ppc64 sparc x86"

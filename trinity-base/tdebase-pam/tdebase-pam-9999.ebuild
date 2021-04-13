@@ -13,6 +13,7 @@ SLOT="0"
 KEYWORDS="~alpha amd64 hppa ~ia64 ~mips ppc ppc64 sparc x86"
 IUSE="elogind"
 
+S="${WORKDIR}"
 DEPEND="sys-libs/pam"
 RDEPEND="${DEPEND}"
 
