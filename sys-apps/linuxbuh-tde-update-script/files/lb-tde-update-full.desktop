@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=LinuxBuh FULL Update Trinity Desktop Environment
+Comment=LinuxBuh FULL Update Trinity Desktop Environment
+Exec=pkexec xterm -maximized lb-tde-update-full
+Icon=tde-logo.png
+Type=Application
+Categories=System;
+
