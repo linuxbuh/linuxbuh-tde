@@ -5,7 +5,6 @@
 ~trinity-base/kscd-9999 **
 ~trinity-base/kaudiocreator-9999 **
 ~trinity-base/libkcddb-9999 **
-~trinity-base/tdebase-pam-9999 **
 #Добавил я по зависимостям
 media-libs/jasper
 sys-apps/linuxbuh-tde-update-script
