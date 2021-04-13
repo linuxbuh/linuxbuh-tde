@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cl-update -v
+
+tde-update-live &&
+
+tde-update-lang
