@@ -8,4 +8,4 @@ trinity-base/konq-plugins arts
 trinity-base/tdeartwork-tdescreensaver arts
 trinity-base/kbounce arts
 #отключаем pam потомучто не собирается trinity-base/tdebase-pam
-trinity-base/tdm -pam
+#trinity-base/tdm -pam
