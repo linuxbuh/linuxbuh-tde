@@ -1,0 +1,1 @@
+The LinuxBuh Trinity Desktop Environment (LBTDE) project
