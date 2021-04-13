@@ -1,7 +1,10 @@
+#Неоходимо добавить в trinity-official
 ~trinity-base/tdemultimedia-meta-9999 **
 ~media-libs/libart_lgpl-9999 **
 ~trinity-base/krec-9999 **
 ~trinity-base/kscd-9999 **
 ~trinity-base/kaudiocreator-9999 **
 ~trinity-base/libkcddb-9999 **
+#Добавил я по зависимостям
 media-libs/jasper
+sys-apps/linuxbuh-tde-update-script
