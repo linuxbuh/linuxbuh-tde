@@ -1,6 +1,6 @@
 [Desktop Entry]
-Exec=/opt/chromium-gost/chromium-gost %u
-Icon=chromium-gost
+Exec=midori %u
+Icon=midori
 MimeType=application/vnd.mozilla.xul+xml;application/xhtml+xml;application/xml;image/gif;image/jpeg;image/png;text/html;text/xml
 
 Name=Web Browser
