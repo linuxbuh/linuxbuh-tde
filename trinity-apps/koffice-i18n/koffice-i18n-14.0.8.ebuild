@@ -47,8 +47,8 @@ else
 	S="${WORKDIR}/${PN}-r${PV}"
 fi
 
-TQT="/opt/trinity"
-TDEDIR="/opt/trinity"
+TQT="/usr/tqt3"
+TDEDIR="/usr/trinity/14"
 
 src_prepare() {
 	cp -rf ${TDEDIR}/share/tde/admin ${S}/

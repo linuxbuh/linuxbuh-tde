@@ -41,7 +41,7 @@ else
 	S="${WORKDIR}/${PN}-r${PV}"
 fi
 
-TDEDIR="/opt/trinity"
+TDEDIR="/usr/trinity/14"
 
 
 src_configure() {

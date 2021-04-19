@@ -36,7 +36,7 @@ else
 	S="${WORKDIR}/${MY_PN}-r${PV}"
 fi
 
-TDEDIR="/opt/trinity"
+TDEDIR="/usr/trinity/14"
 
 src_install() {
 	dodir ${TDEDIR}/share/cmake/modules
