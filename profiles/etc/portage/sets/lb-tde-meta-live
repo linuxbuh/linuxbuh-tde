@@ -11,6 +11,7 @@ trinity-base/tdeutils-meta
 trinity-base/tdewebdev-meta
 trinity-base/tde-i18n
 trinity-base/libkpgp
+trinity-base/libkcal
 trinity-base/kmobile
 media-libs/xine-lib
 trinity-apps/abakus
