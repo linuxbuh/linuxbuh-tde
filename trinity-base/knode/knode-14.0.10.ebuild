@@ -9,6 +9,7 @@ TSM_EXTRACT_ALSO="libtdepim/ libemailfunctions/ libkpgp/ libkmime/ translations/
 inherit trinity-meta-2
 
 DESCRIPTION="A newsreader for TDE"
+SRC_URI="http://www.mirrorservice.org/sites/trinitydesktop.org/trinity/releases/R${PV}/main/core/tdepim-trinity-${PV}.tar.xz"
 
 if [[ ${PV} != *9999* ]] ; then
 	KEYWORDS="~amd64 ~x86"

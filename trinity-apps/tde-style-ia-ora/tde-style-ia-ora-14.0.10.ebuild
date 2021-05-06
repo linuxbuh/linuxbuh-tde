@@ -1,11 +1,11 @@
 # Copyright 1999-2019 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
-EAPI="6"
+EAPI="7"
 
-inherit versionator eutils desktop flag-o-matic gnome2-utils
+inherit cmake-utils desktop flag-o-matic gnome2-utils
 
-DESCRIPTION="Qt like interface for the libexiv2 library (runtime) [Trinity]"
+DESCRIPTION="Mandriva theme for TDE - Widget design"
 HOMEPAGE="http://trinitydesktop.org/"
 
 if [[ ${PV} = 14.0.999 ]]; then
@@ -26,18 +26,15 @@ KEYWORDS="~amd64 ~x86"
 SLOT="0"
 IUSE=""
 
-DEPEND="
-	trinity-base/tde-common-admin
-	>=trinity-base/tdelibs-${PV}
-	dev-util/desktop-file-utils
-	sys-devel/autoconf
-	sys-devel/automake
-	sys-devel/m4
+BDEPEND="
 	sys-devel/libtool
 	virtual/pkgconfig
 	sys-devel/gettext
-	dev-libs/libltdl
-	media-gfx/exiv2
+	app-misc/fdupes
+	trinity-base/tde-common-cmake
+"
+DEPEND="
+	~trinity-base/tdelibs-${PV}
 "
 RDEPEND="$DEPEND"
 
@@ -47,33 +44,30 @@ else
 	S="${WORKDIR}/${PN}-r${PV}"
 fi
 
-TQT="/usr/tqt3"
-TDEDIR="TDEDIR="/usr/trinity/14""
-
-
-src_prepare() {
-	cp -rf /opt/trinity/share/tde/admin ${S}/
-	cd ${S}/admin
-	libtoolize -c
-	cp -Rp /usr/share/aclocal/libtool.m4 "${S}/admin/libtool.m4.in"
-	eapply_user
-}
+TQT="/opt/trinity"
+TDEDIR="/opt/trinity"
 
 src_configure() {
+	cp -rf ${TDEDIR}/share/cmake ${S}/
 	unset TDE_FULL_SESSION TDEROOTHOME TDE_SESSION_UID TDEHOME TDE_MULTIHEAD
 	export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:${TDEDIR}/$(get_libdir)/pkgconfig
-	emake -f admin/Makefile.common
-	./configure --prefix="${TDEDIR}" \
-		--bindir="${TDEDIR}/bin" \
-		--datadir="${TDEDIR}/share" \
-		--includedir="${TDEDIR}/include" \
-		--libdir="${TDEDIR}/$(get_libdir)" \
-		--disable-dependency-tracking \
-		--disable-debug \
-		--enable-new-ldflags \
-		--enable-final \
-		--enable-closure \
-		--enable-rpath \
-		--disable-gcc-hidden-visibility || die
+	mycmakeargs=(
+	-DCMAKE_BUILD_TYPE="RelWithDebInfo"
+	-DCMAKE_INSTALL_PREFIX=${TDEDIR}
+	-DBIN_INSTALL_DIR="${TDEDIR}/bin"
+	-DCMAKE_C_FLAGS="${CFLAGS} -DNDEBUG"
+	-DCMAKE_CXX_FLAGS="${CXXFLAGS} -DNDEBUG"
+	-DCMAKE_SKIP_RPATH=OFF
+	-DCMAKE_INSTALL_RPATH="${TDEDIR}/$(get_libdir)"
+	-DCMAKE_VERBOSE_MAKEFILE=ON
+	-DWITH_GCC_VISIBILITY=OFF
+	-DINCLUDE_INSTALL_DIR="${TDEDIR}/include"
+	-DQTC_QT_ONLY=false
+	-DQTC_STYLE_SUPPORT=true
+	-DSHARE_INSTALL_PREFIX="${TDEDIR}/share"
+	-DLIB_INSTALL_DIR="${TDEDIR}/$(get_libdir)"
+	-DBUILD_ALL=ON
+	)
 
+	 cmake-utils_src_configure || die
 }

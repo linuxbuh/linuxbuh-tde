@@ -18,7 +18,7 @@ IUSE="arts"
 #Some packages use hacky workarounds to make up for not being able to
 #install only a subset of files.
 RDEPEND="arts? ( ~trinity-base/juk-${PV}
-		~trinity-base/kaboodle-${PV}
+		~trinity-base/kaboodle-${PV} )
 	~trinity-base/kaudiocreator-${PV}
 	~trinity-base/kmix-${PV}
 	~trinity-base/krec-${PV}

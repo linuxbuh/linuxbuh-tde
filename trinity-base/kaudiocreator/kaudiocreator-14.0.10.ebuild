@@ -7,6 +7,7 @@ TRINITY_MODULE_NAME="tdemultimedia"
 inherit trinity-meta-2
 
 DESCRIPTION="TDE CD ripper and audio encoder frontend"
+SRC_URI="http://www.mirrorservice.org/sites/trinitydesktop.org/trinity/releases/R${PV}/main/core/tdemultimedia-trinity-${PV}.tar.xz"
 KEYWORDS="~amd64 ~x86"
 IUSE="encode flac mp3 vorbis"
 DEPEND="~trinity-base/libkcddb-${PV}

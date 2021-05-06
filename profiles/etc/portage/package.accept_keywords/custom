@@ -1,3 +1,5 @@
+media-sound/pulseaudio-ctl ~amd64
+app-backup/timeshift ~amd64
 dev-libs/dbus-1-tqt
 dev-libs/dbus-tqt
 dev-tqt/avahi-tqt
@@ -269,7 +271,7 @@ trinity-base/tdegames-meta
 trinity-base/tdegraphics-doc
 trinity-base/tdegraphics-meta
 trinity-base/tdegraphics-tdefile-plugins
-trinity-base/tde-i18n
+>=trinity-base/tde-i18n-14.0.10 **
 trinity-base/tdeiconedit
 trinity-base/tdeinit
 trinity-base/tdelibs

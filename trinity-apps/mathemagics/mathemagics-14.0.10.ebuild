@@ -1,11 +1,11 @@
-# Copyright 1999-2019 Gentoo Foundation
+# Copyright 1999-2020 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 EAPI="7"
 
 inherit cmake-utils desktop flag-o-matic gnome2-utils
 
-DESCRIPTION="Keyboard layout indicator for TDE"
+DESCRIPTION="RPN scientific calculator for TDE [Trinity]"
 HOMEPAGE="http://trinitydesktop.org/"
 
 if [[ ${PV} = 14.0.999 ]]; then
@@ -28,15 +28,12 @@ IUSE=""
 
 BDEPEND="
 	trinity-base/tde-common-cmake
-	dev-util/desktop-file-utils
 	virtual/pkgconfig
+	sys-devel/libtool
+	dev-util/desktop-file-utils
 "
 DEPEND="
 	~trinity-base/tdelibs-${PV}
-	virtual/acl
-	net-dns/libidn
-	dev-libs/openssl
-	x11-libs/libxkbfile
 "
 RDEPEND="$DEPEND"
 
@@ -46,31 +43,34 @@ else
 	S="${WORKDIR}/${PN}-r${PV}"
 fi
 
-TDEDIR="/usr/trinity/14"
-
+TQT="/opt/trinity"
+TDEDIR="/opt/trinity"
 
 src_configure() {
 	cp -rf ${TDEDIR}/share/cmake .
 	unset TDE_FULL_SESSION TDEROOTHOME TDE_SESSION_UID TDEHOME TDE_MULTIHEAD
 	export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:${TDEDIR}/$(get_libdir)/pkgconfig
-	export QTDIR=$TQT
 	mycmakeargs=(
-		-DCMAKE_C_FLAGS="${CFLAGS} -DNDEBUG"
-		-DCMAKE_CXX_FLAGS="${CXXFLAGS} -DNDEBUG"
-		-DCMAKE_SKIP_RPATH=OFF
-		-DCMAKE_INSTALL_RPATH="${TDEDIR}/$(get_libdir)"
-		-DCMAKE_VERBOSE_MAKEFILE=ON
-		-DCMAKE_PROGRAM_PATH="${TDEDIR}/bin"
-		-DWITH_GCC_VISIBILITY=OFF
-		-DCMAKE_INSTALL_PREFIX=${TDEDIR}
-		-DBIN_INSTALL_DIR="${TDEDIR}/bin"
-		-DCONFIG_INSTALL_DIR="/etc/trinity"
-		-DINCLUDE_INSTALL_DIR="${TDEDIR}/include"
-		-DLIB_INSTALL_DIR="${TDEDIR}/$(get_libdir)"
-		-DSHARE_INSTALL_PREFIX="${TDEDIR}/share"
-		-DBUILD_DOC=ON
-		-DBUILD_TRANSLATIONS=ON
-		-DBUILD_ALL=ON
-)
-	cmake-utils_src_configure
+	-DCMAKE_BUILD_TYPE="RelWithDebInfo"
+	-DCMAKE_INSTALL_PREFIX=${TDEDIR}
+	-DCMAKE_C_FLAGS="${CFLAGS} -DNDEBUG"
+	-DCMAKE_CXX_FLAGS="${CXXFLAGS} -DNDEBUG"
+	-DCMAKE_SKIP_RPATH=OFF
+	-DCMAKE_INSTALL_RPATH="${TDEDIR}/$(get_libdir)"
+	-DCMAKE_VERBOSE_MAKEFILE=ON
+	-DWITH_GCC_VISIBILITY=OFF
+	-DINCLUDE_INSTALL_DIR="${TDEDIR}/include"
+	-DDATA_INSTALL_DIR="${TDEDIR}/share/apps"
+	-DMIME_INSTALL_DIR="${TDEDIR}/share/mimelnk"
+	-DXDG_APPS_INSTALL_DIR="${TDEDIR}/share/applications/tde"
+	-DSHARE_INSTALL_PREFIX="${TDEDIR}/share"
+	-DDOC_INSTALL_DIR=""${TDEDIR}/share/doc/tde""
+	-DLIB_INSTALL_DIR="${TDEDIR}/$(get_libdir)"
+	-DUSE_STRIGI=OFF
+	-DUSE_MENUDRAKE=OFF
+	-DBUILD_DOC=ON
+	-DBUILD_ALL=ON
+	)
+
+	 cmake-utils_src_configure
 }
