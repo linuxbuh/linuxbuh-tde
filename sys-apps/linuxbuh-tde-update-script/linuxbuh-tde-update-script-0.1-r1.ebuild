@@ -45,6 +45,10 @@ cp -r ${WORKDIR}/${P}/lb-tde-update-live ${D}/usr/bin
 
 pkg_postinst() {
 
+chmod 0777 /usr/bin/lb-tde-update-full
+chmod 0777 /usr/bin/lb-tde-update-lang
+chmod 0777 /usr/bin/lb-tde-update-live
+
 nopasswd=`ls /etc/sudoers.d/ | grep nopasswd`
 
 if [ nopasswd == $nopasswd ]; then
