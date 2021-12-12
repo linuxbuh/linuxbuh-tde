@@ -10,3 +10,4 @@ media-libs/jasper
 sys-apps/linuxbuh-tde-update-script
 ~trinity-apps/kkbswitch-9999 **
 ~trinity-base/tde-common-cmake-9999 **
+~trinity-base/trinity-cmake-9999 **
