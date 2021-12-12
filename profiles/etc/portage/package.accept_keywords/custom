@@ -1,10 +1,10 @@
 media-sound/pulseaudio-ctl ~amd64
 app-backup/timeshift ~amd64
-=dev-libs/dbus-1-tqt-14.0.10 **
-=dev-libs/dbus-tqt-14.0.10 **
-=dev-tqt/avahi-tqt-14.0.10 **
-=dev-tqt/tqt-14.0.10 **
-=dev-tqt/tqtinterface-14.0.10 **
+=dev-libs/dbus-1-tqt-14.0.11 **
+=dev-libs/dbus-tqt-14.0.11 **
+=dev-tqt/avahi-tqt-14.0.11 **
+=dev-tqt/tqt-14.0.11 **
+=dev-tqt/tqtinterface-14.0.11 **
 media-libs/akode
 trinity-apps/abakus
 trinity-apps/amarok
@@ -271,7 +271,7 @@ trinity-base/tdegames-meta
 trinity-base/tdegraphics-doc
 trinity-base/tdegraphics-meta
 trinity-base/tdegraphics-tdefile-plugins
-=trinity-base/tde-i18n-14.0.10 **
+=trinity-base/tde-i18n-14.0.11 **
 trinity-base/tdeiconedit
 trinity-base/tdeinit
 trinity-base/tdelibs
@@ -322,7 +322,7 @@ trinity-base/tdebase-pam
 #Добавил я по зависимостям
 media-libs/jasper
 sys-apps/linuxbuh-tde-update-script
-=trinity-apps/kkbswitch-14.0.10 **
+=trinity-apps/kkbswitch-14.0.11 **
 trinity-base/tde-common-cmake
 # required by trinity-base/tdeeject (argument)
-=trinity-base/tdeeject-14.0.10 **
+=trinity-base/tdeeject-14.0.11 **
