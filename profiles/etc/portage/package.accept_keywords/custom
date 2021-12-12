@@ -326,3 +326,4 @@ sys-apps/linuxbuh-tde-update-script
 trinity-base/tde-common-cmake
 # required by trinity-base/tdeeject (argument)
 =trinity-base/tdeeject-14.0.11 **
+=trinity-base/trinity-cmake-14.0.11 **
