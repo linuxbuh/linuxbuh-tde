@@ -1,9 +1,9 @@
 # Copyright 1999-2020 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
-EAPI="6"
+EAPI="7"
 
-inherit versionator eutils desktop
+inherit eutils desktop
 
 DESCRIPTION="BitTorrent client for Trinity"
 HOMEPAGE="http://trinitydesktop.org/"
@@ -48,7 +48,8 @@ else
 	S="${WORKDIR}/${PN}-r${PV}"
 fi
 
-TDEDIR="/opt/trinity"
+TQT="/usr/tqt3"
+TDEDIR="/usr/trinity/14"
 
 src_prepare() {
 	cp ${TDEDIR}/share/tde/admin/* ${S}/admin/

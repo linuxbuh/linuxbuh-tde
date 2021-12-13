@@ -36,6 +36,7 @@ else
 	S="${WORKDIR}/${MY_PN}-r${PV}"
 fi
 
+TQT="/usr/tqt3"
 TDEDIR="/usr/trinity/14"
 
 src_install() {

@@ -48,7 +48,7 @@ else
 fi
 
 TQT="/usr/tqt3"
-TDEDIR="TDEDIR="/usr/trinity/14""
+TDEDIR="/usr/trinity/14"
 
 
 src_prepare() {

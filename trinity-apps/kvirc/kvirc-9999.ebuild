@@ -1,7 +1,7 @@
 # Copyright 1999-2019 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
-EAPI="6"
+EAPI="7"
 
 
 inherit eutils desktop flag-o-matic gnome2-utils
@@ -47,8 +47,8 @@ else
 	S="${WORKDIR}/${PN}-r${PV}"
 fi
 
-TQT="/opt/trinity"
-TDEDIR="/opt/trinity"
+TQT="/usr/tqt3"
+TDEDIR="/usr/trinity/14"
 MAKEOPTS="-j1"
 
 src_prepare() {

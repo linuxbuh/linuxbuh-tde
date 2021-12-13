@@ -1,7 +1,7 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
-EAPI="6"
+EAPI="7"
 
 
 inherit eutils desktop flag-o-matic gnome2-utils
@@ -40,14 +40,14 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 
-if [[ ${PV} = 14.0.999 ]] || [[ ${PV} = 9999 ]]; then
+if [[ ${PV} = 9999 ]]; then
 	S="${WORKDIR}/${P}"
 else
 	S="${WORKDIR}/${PN}-r${PV}"
 fi
 
-TQT="/opt/trinity"
-TDEDIR="/opt/trinity"
+TQT="/usr/tqt3"
+TDEDIR="/usr/trinity/14"
 
 
 src_prepare() {

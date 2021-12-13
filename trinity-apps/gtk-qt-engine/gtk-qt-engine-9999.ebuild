@@ -40,23 +40,23 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 
-if [[ ${PV} = 14.0.999 ]] || [[ ${PV} = 9999 ]]; then
+if [[ ${PV} = 9999 ]]; then
 	S="${WORKDIR}/${P}"
 else
 	S="${WORKDIR}/${PN}-r${PV}"
 fi
 
-TQT="/opt/trinity"
-TDEDIR="/opt/trinity"
+TQT="/usr/tqt3"
+TDEDIR="/usr/trinity/14"
 
 src_configure() {
 	cp -rf ${TDEDIR}/share/cmake ${S}/
 	unset TDE_FULL_SESSION TDEROOTHOME TDE_SESSION_UID TDEHOME TDE_MULTIHEAD
 	export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:${TDEDIR}/$(get_libdir)/pkgconfig
 	export QTDIR=$TQT
-	export LIBDIR=/opt/trinity/lib
+	export LIBDIR=${TQT}/lib64
 	mycmakeargs=(
-		-DCMAKE_CXX_FLAGS="-L${TQT}/lib"
+		-DCMAKE_CXX_FLAGS="-L${TQT}/lib64"
 		-DCMAKE_INSTALL_PREFIX=${TDEDIR}
 		-DCMAKE_BUILD_TYPE="RelWithDebInfo"
 		-DCMAKE_C_FLAGS="${CFLAGS} -DNDEBUG"

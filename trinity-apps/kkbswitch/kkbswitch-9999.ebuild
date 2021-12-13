@@ -46,6 +46,7 @@ else
 	S="${WORKDIR}/${PN}-r${PV}"
 fi
 
+TQT="/usr/tqt3"
 TDEDIR="/usr/trinity/14"
 
 

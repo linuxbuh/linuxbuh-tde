@@ -35,12 +35,13 @@ DEPEND="
 "
 RDEPEND="$DEPEND"
 
-if [[ ${PV} = 14.0.999 ]] || [[ ${PV} = 9999 ]]; then
+if [[ ${PV} = 9999 ]]; then
 	S="${WORKDIR}/${P}"
 else
 	S="${WORKDIR}/${PN}-r${PV}"
 fi
 
+TQT="/usr/tqt3"
 TDEDIR="/usr/trinity/14"
 
 

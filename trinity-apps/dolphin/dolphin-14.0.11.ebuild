@@ -8,12 +8,7 @@ inherit cmake-utils desktop flag-o-matic gnome2-utils
 DESCRIPTION="Dolphin focuses on being only a file manager"
 HOMEPAGE="http://trinitydesktop.org/"
 
-if [[ ${PV} = 14.0.999 ]]; then
-	inherit git-r3
-        EGIT_REPO_URI="https://mirror.git.trinitydesktop.org/cgit/${PN}"
-        EGIT_BRANCH="r14.0.x"
-	EGIT_SUBMODULES=()
-elif [[ ${PV} = 9999 ]]; then
+if [[ ${PV} = 9999 ]]; then
 	inherit git-r3
         EGIT_REPO_URI="https://mirror.git.trinitydesktop.org/cgit/${PN}"
 	EGIT_SUBMODULES=()
@@ -41,6 +36,7 @@ else
 	S="${WORKDIR}/${PN}-r${PV}"
 fi
 
+TQT="/usr/tqt3"
 TDEDIR="/usr/trinity/14"
 
 

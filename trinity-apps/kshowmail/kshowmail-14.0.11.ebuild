@@ -1,9 +1,9 @@
 # Copyright 1999-2019 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
-EAPI="6"
+EAPI="7"
 
-inherit versionator eutils desktop flag-o-matic gnome2-utils
+inherit eutils desktop flag-o-matic gnome2-utils
 
 DESCRIPTION="Look messages into your mail server"
 HOMEPAGE="http://trinitydesktop.org/"
@@ -46,7 +46,8 @@ else
 	S="${WORKDIR}/${PN}-r${PV}"
 fi
 
-TDEDIR="/opt/trinity"
+TQT="/usr/tqt3"
+TDEDIR="/usr/trinity/14"
 
 
 src_prepare() {

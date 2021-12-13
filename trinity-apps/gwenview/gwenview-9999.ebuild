@@ -8,12 +8,7 @@ inherit versionator eutils desktop autotools
 DESCRIPTION="Gwenview is an image viewer for TDE"
 HOMEPAGE="http://trinitydesktop.org/"
 
-if [[ ${PV} = 14.0.999 ]]; then
-	inherit git-r3
-        EGIT_REPO_URI="https://mirror.git.trinitydesktop.org/cgit/${PN}"
-        EGIT_BRANCH="r14.0.x"
-	EGIT_SUBMODULES=()
-elif [[ ${PV} = 9999 ]]; then
+if [[ ${PV} = 9999 ]]; then
 	inherit git-r3
         EGIT_REPO_URI="https://mirror.git.trinitydesktop.org/cgit/${PN}"
 	EGIT_SUBMODULES=()
@@ -41,13 +36,14 @@ DEPEND="
 "
 RDEPEND="$DEPEND"
 
-if [[ ${PV} = 14.0.999 ]] || [[ ${PV} = 9999 ]]; then
+if [[ ${PV} = 9999 ]]; then
 	S="${WORKDIR}/${P}"
 else
 	S="${WORKDIR}/${PN}-r${PV}"
 fi
 
-TDEDIR="/opt/trinity"
+TQT="/usr/tqt3"
+TDEDIR="/usr/trinity/14"
 
 
 src_prepare() {

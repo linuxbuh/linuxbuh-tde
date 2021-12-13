@@ -50,7 +50,8 @@ else
 	S="${WORKDIR}/${PN}-r${PV}"
 fi
 
-TDEDIR="/opt/trinity"
+TQT="/usr/tqt3"
+TDEDIR="/usr/trinity/14"
 
 
 src_prepare() {

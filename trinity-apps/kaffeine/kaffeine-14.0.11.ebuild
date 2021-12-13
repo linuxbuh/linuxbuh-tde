@@ -56,14 +56,14 @@ DEPEND="
 	jack? ( >=media-sound/jack-audio-connection-kit-0.90 )"
 RDEPEND="${DEPEND}"
 
-if [[ ${PV} = 14.0.999 ]] || [[ ${PV} = 9999 ]]; then
+if [[ ${PV} = 9999 ]]; then
 	S="${WORKDIR}/${P}"
 else
 	S="${WORKDIR}/${PN}-r${PV}"
 fi
 
-TQT="/opt/trinity"
-TDEDIR="/opt/trinity"
+TQT="/usr/tqt3"
+TDEDIR="/usr/trinity/14"
 
 src_prepare() {
 	cp -rf ${TDEDIR}/share/tde/admin ${S}/

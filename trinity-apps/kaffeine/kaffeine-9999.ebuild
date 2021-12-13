@@ -10,12 +10,7 @@ inherit versionator multilib desktop flag-o-matic gnome2-utils
 DESCRIPTION="aRts, the Trinity sound (and all-around multimedia) server/output manager"
 HOMEPAGE="http://trinitydesktop.org/"
 
-if [[ ${PV} = 14.0.999 ]]; then
-	inherit git-r3
-        EGIT_REPO_URI="https://mirror.git.trinitydesktop.org/cgit/${PN}"
-        EGIT_BRANCH="r14.0.x"
-	EGIT_SUBMODULES=()
-elif [[ ${PV} = 9999 ]]; then
+if [[ ${PV} = 9999 ]]; then
 	inherit git-r3
         EGIT_REPO_URI="https://mirror.git.trinitydesktop.org/cgit/${PN}"
 	EGIT_SUBMODULES=()
@@ -62,8 +57,8 @@ else
 	S="${WORKDIR}/${PN}-r${PV}"
 fi
 
-TQT="/opt/trinity"
-TDEDIR="/opt/trinity"
+TQT="/usr/tqt3"
+TDEDIR="/usr/trinity/14"
 
 src_prepare() {
 	cp -rf ${TDEDIR}/share/tde/admin ${S}/
