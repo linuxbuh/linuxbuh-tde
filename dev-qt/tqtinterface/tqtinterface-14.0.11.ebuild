@@ -1,67 +1,36 @@
-# Copyright 1999-2019 Gentoo Foundation
+# Copyright 1999-2021 Gentoo Authors
+# Copyright 2021 The Trinity Desktop Project
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 EAPI="7"
 
-inherit cmake-utils desktop flag-o-matic gnome2-utils
+TRINITY_MODULE_TYPE="dependencies"
+TRINITY_MODULE_NAME="tqtinterface"
+inherit trinity-base-2
 
-DESCRIPTION="Interface and abstraction library for Qt and Trinity"
-HOMEPAGE="http://trinitydesktop.org/"
+DESCRIPTION="Interface and abstraction library for TQt and Trinity"
+HOMEPAGE="https://trinitydesktop.org/"
 
-if [[ ${PV} = 14.0.999 ]]; then
-	inherit git-r3
-        EGIT_REPO_URI="https://mirror.git.trinitydesktop.org/cgit/${PN}"
-        EGIT_BRANCH="r14.0.x"
-	EGIT_SUBMODULES=()
-elif [[ ${PV} = 9999 ]]; then
-	inherit git-r3
-        EGIT_REPO_URI="https://mirror.git.trinitydesktop.org/cgit/${PN}"
-	EGIT_SUBMODULES=()
-else
-	SRC_URI="https://mirror.git.trinitydesktop.org/cgit/${PN}/snapshot/${PN}-r${PV}.tar.gz"
-fi
-
-LICENSE="GPL-2"
-KEYWORDS="~amd64 ~x86"
-IUSE="+opengl"
+LICENSE="|| ( GPL-2 GPL-3 )"
 SLOT="0"
-
-BDEPEND="
-	trinity-base/tde-common-cmake
-	virtual/pkgconfig
-"
-DEPEND="
-	dev-qt/tqt3
-	opengl? ( dev-qt/tqt3[opengl] )
-	sys-fs/e2fsprogs
-	sys-apps/util-linux
-	x11-base/xorg-server
-	x11-libs/libXi
-"
-
-RDEPEND="${DEPEND}"
-if [[ ${PV} = 9999 ]]; then
-	S="${WORKDIR}/${P}"
-else
-	S="${WORKDIR}/${PN}-r${PV}"
+if [[ ${PV} != *9999* ]] ; then
+    KEYWORDS="~amd64 ~arm64 ~x86"
 fi
+IUSE="+opengl"
 
-TQTBASE="/usr/tqt3"
-TDEDIR="/usr/trinity/14"
+DEPEND="~dev-tqt/tqt-${PV}[opengl=]
+	opengl? ( virtual/glu )"
+RDEPEND="${DEPEND}"
+
+pkg_setup() {
+	export TQTDIR="/usr/tqt3"
+}
 
 src_configure() {
-	cp -rf ${TDEDIR}/share/cmake .
-	unset TDE_FULL_SESSION TDEROOTHOME TDE_SESSION_UID TDEHOME TDE_MULTIHEAD
-	export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:${TDEDIR}/$(get_libdir)/pkgconfig:$PKG_CONFIG_PATH
-	mycmakeargs=(
-		-DQT_INCLUDE_DIR="${TQTBASE}/include"
-		-DCMAKE_CXX_FLAGS="-LTQTBASE/$(get_libdir)"
-		-DQT_PREFIX_DIR="${TQTBASE}"
-		-DQT_LIBRARY_DIR="${TQTBASE}/$(get_libdir)"
-		-DQT_VERSION=3
-		-DBUILD_ALL=ON
+	local mycmakeargs=(
+		-DQT_PREFIX_DIR="${TQTDIR}"
+		-DUSE_QT3=ON
 	)
 
-	 cmake-utils_src_configure
+	cmake-utils_src_configure
 }
