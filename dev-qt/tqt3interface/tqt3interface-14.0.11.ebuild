@@ -8,6 +8,9 @@ TRINITY_MODULE_TYPE="dependencies"
 TRINITY_MODULE_NAME="tqtinterface"
 inherit trinity-base-2
 
+
+
+
 DESCRIPTION="Interface and abstraction library for TQt and Trinity"
 HOMEPAGE="https://trinitydesktop.org/"
 
