@@ -30,7 +30,7 @@ BDEPEND="
 "
 
 DEPEND="
-	>=dev-qt/tqtinterface-${PV}
+	>=dev-tqt/tqtinterface-${PV}
 	dev-libs/openssl
 "
 RDEPEND="$DEPEND"
