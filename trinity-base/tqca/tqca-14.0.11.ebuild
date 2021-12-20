@@ -31,7 +31,7 @@ BDEPEND="
         ~trinity-base/tde-common-cmake-${PV}
 "
 DEPEND="
-	>=dev-qt/tqtinterface-${PV}
+	>=dev-qt/tqt3interface-${PV}
 "
 RDEPEND="$DEPEND"
 
