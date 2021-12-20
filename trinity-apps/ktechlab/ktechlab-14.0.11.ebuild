@@ -1,7 +1,7 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
-EAPI=""
+EAPI="7"
 
 inherit eutils desktop flag-o-matic gnome2-utils
 
