@@ -3,7 +3,7 @@
 # $Id$
 EAPI="7"
 
-inherit cmake-utils desktop flag-o-matic gnome2-utils
+inherit cmake desktop flag-o-matic gnome2-utils
 
 DESCRIPTION="Dolphin focuses on being only a file manager"
 HOMEPAGE="http://trinitydesktop.org/"
@@ -62,5 +62,5 @@ src_configure() {
 		-DSHARE_INSTALL_PREFIX="${TDEDIR}/share"
 		-DBUILD_ALL=ON
 )
-	cmake-utils_src_configure
+	cmake_src_configure
 }

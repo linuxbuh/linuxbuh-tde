@@ -3,7 +3,7 @@
 # $Id$
 EAPI="7"
 
-inherit cmake-utils desktop flag-o-matic gnome2-utils
+inherit cmake desktop flag-o-matic gnome2-utils
 
 DESCRIPTION="Icollection manager for books, videos, music [Trinity]"
 HOMEPAGE="http://trinitydesktop.org/"
@@ -86,5 +86,5 @@ src_configure() {
 		-DWITH_LIBBTPARSE=OFF
 		-DWITH_SAX_LOADER=ON
 )
-	cmake-utils_src_configure
+	cmake_src_configure
 }

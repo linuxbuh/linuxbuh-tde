@@ -4,7 +4,7 @@
 EAPI="7"
 
 
-inherit cmake-utils desktop flag-o-matic gnome2-utils
+inherit cmake desktop flag-o-matic gnome2-utils
 
 
 DESCRIPTION="Utilities for the Trinity Desktop Environment, including"
@@ -105,11 +105,11 @@ src_configure() {
 		-DBUILD_KLAPTOPDAEMON=$(usex klaptopdaemon)
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 #src_install() {
-#	cmake-utils_src_install
+#	cmake_src_install
 #
 #}
 

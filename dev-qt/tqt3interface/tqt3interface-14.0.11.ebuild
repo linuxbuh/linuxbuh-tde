@@ -35,5 +35,5 @@ src_configure() {
 		-DUSE_QT3=ON
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }

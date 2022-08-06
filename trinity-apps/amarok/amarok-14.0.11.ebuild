@@ -3,7 +3,7 @@
 # $Id$
 EAPI="7"
 
-inherit cmake-utils desktop flag-o-matic gnome2-utils
+inherit cmake desktop flag-o-matic gnome2-utils
 
 DESCRIPTION="Advanced audio player based on KDE frameworks"
 HOMEPAGE="http://trinitydesktop.org/"
@@ -60,5 +60,5 @@ src_configure() {
 #	-DWITH_DAAP=ON
 	)
 
-	 cmake-utils_src_configure
+	 cmake_src_configure
 }

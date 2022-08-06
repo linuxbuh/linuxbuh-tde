@@ -3,7 +3,7 @@
 # $Id$
 EAPI="7"
 
-inherit cmake-utils desktop flag-o-matic gnome2-utils
+inherit cmake desktop flag-o-matic gnome2-utils
 
 DESCRIPTION="The TDevelop Integrated Development Environment"
 HOMEPAGE="http://trinitydesktop.org/"
@@ -63,7 +63,7 @@ src_prepare() {
 	cd ${S}/parts/appwizard/common/admin
 	libtoolize -c
 	cp -Rp /usr/share/aclocal/libtool.m4 libtool.m4.in
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -92,5 +92,5 @@ src_configure() {
 	-DBUILD_ALL=ON
 	)
 
-	 cmake-utils_src_configure
+	 cmake_src_configure
 }

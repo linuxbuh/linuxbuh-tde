@@ -3,7 +3,7 @@
 # $Id$
 EAPI="7"
 
-inherit cmake-utils desktop flag-o-matic gnome2-utils
+inherit cmake desktop flag-o-matic gnome2-utils
 
 DESCRIPTION="TDE applet for NetworkManager"
 HOMEPAGE="http://trinitydesktop.org/"
@@ -75,5 +75,5 @@ src_configure() {
 	-DLIB_INSTALL_DIR="${TDEDIR}/$(get_libdir)"
 	)
 
-	 cmake-utils_src_configure
+	 cmake_src_configure
 }

@@ -4,7 +4,7 @@
 
 EAPI="7"
 
-inherit cmake-utils desktop flag-o-matic gnome2-utils
+inherit cmake desktop flag-o-matic gnome2-utils
 
 DESCRIPTION="Base package of the Trinity Desktop Environment (TDE)"
 HOMEPAGE="http://trinitydesktop.org/"
@@ -104,7 +104,7 @@ src_prepare() {
 	# no compton
 #	sed -i "twin/CMakeLists.txt" -e "/compton-tde/ s/^/#/"
 	sed -i "${S}/tdm/kfrontend/gentdmconf.c" -e "s|/etc/X11/Xsession|/etc/trinity/X11/Xsession|"
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -199,11 +199,11 @@ src_configure() {
 	)
 	fi
 
-	 cmake-utils_src_configure
+	 cmake_src_configure
 }
 
 src_install() {
-	cmake-utils_src_install
+	cmake_src_install
 	if use pam ; then
 		dodir /etc/pam.d
 		insinto /etc/pam.d

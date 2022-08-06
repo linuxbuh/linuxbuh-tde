@@ -4,7 +4,7 @@
 EAPI="7"
 
 
-inherit cmake-utils desktop flag-o-matic gnome2-utils
+inherit cmake desktop flag-o-matic gnome2-utils
 
 
 DESCRIPTION="aRts, the Trinity sound (and all-around multimedia) server/output manager"
@@ -56,7 +56,7 @@ TDEDIR="/usr/trinity/14"
 
 src_prepare() {
 	cp -rf ${TDEDIR}/share/tde/libltdl/. ${S}/libltdl || die
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -77,11 +77,11 @@ src_configure() {
 		# NOTE: WITH_ESD dropped due to remove of esound long ago
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 src_install() {
-	cmake-utils_src_install
+	cmake_src_install
 
 	# used for realtime priority, but off by default as it is a security hazard
 	use artswrappersuid && chmod u+s "${D}/${PREFIX}/bin/artswrapper"

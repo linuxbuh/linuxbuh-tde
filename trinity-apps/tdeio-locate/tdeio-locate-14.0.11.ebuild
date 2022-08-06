@@ -3,7 +3,7 @@
 # $Id$
 EAPI="7"
 
-inherit cmake-utils desktop flag-o-matic gnome2-utils
+inherit cmake desktop flag-o-matic gnome2-utils
 
 DESCRIPTION="Tdeio-slave for the locate command [Trinity]"
 HOMEPAGE="http://trinitydesktop.org/"
@@ -67,5 +67,5 @@ src_configure() {
 		-DBUILD_ALL=ON
 )
 
-	 cmake-utils_src_configure
+	 cmake_src_configure
 }

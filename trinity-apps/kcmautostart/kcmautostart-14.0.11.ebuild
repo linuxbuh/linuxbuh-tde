@@ -3,7 +3,7 @@
 # $Id$
 EAPI="7"
 
-inherit cmake-utils desktop flag-o-matic gnome2-utils
+inherit cmake desktop flag-o-matic gnome2-utils
 
 DESCRIPTION="Manage applications automatic startup"
 HOMEPAGE="http://trinitydesktop.org/"
@@ -71,5 +71,5 @@ src_configure() {
 		-DBUILD_TRANSLATIONS=ON
 )
 
-	 cmake-utils_src_configure
+	 cmake_src_configure
 }

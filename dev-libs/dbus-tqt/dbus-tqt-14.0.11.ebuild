@@ -22,5 +22,5 @@ DEPEND="sys-apps/dbus
 RDEPEND="${DEPEND}"
 
 src_configure() {
-	cmake-utils_src_configure
+	cmake_src_configure
 }

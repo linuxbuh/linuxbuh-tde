@@ -3,7 +3,7 @@
 # $Id$
 EAPI="7"
 
-inherit cmake-utils desktop flag-o-matic gnome2-utils
+inherit cmake desktop flag-o-matic gnome2-utils
 
 DESCRIPTION="Mandriva theme for TDE - Widget design"
 HOMEPAGE="http://trinitydesktop.org/"
@@ -69,5 +69,5 @@ src_configure() {
 	-DBUILD_ALL=ON
 	)
 
-	 cmake-utils_src_configure || die
+	 cmake_src_configure || die
 }

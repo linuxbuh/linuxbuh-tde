@@ -4,7 +4,7 @@
 EAPI="7"
 
 : ${CMAKE_MAKEFILE_GENERATOR:=emake}
-inherit cmake-utils desktop flag-o-matic gnome2-utils
+inherit cmake desktop flag-o-matic gnome2-utils
 
 
 DESCRIPTION="Personal Information Management apps from the official Trinity release"
@@ -110,6 +110,6 @@ src_configure() {
 		
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 

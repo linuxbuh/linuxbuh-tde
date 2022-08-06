@@ -3,7 +3,7 @@
 # $Id$
 EAPI="7"
 
-inherit eutils desktop flag-o-matic cmake-utils gnome2-utils
+inherit eutils desktop flag-o-matic cmake gnome2-utils
 
 DESCRIPTION="TDE Education Project "
 HOMEPAGE="http://trinitydesktop.org/"
@@ -57,7 +57,7 @@ TDEDIR="/usr/trinity/14"
 src_prepare() {
 	cp -rf ${TDEDIR}/share/cmake .
 	sed '/scripting/d' -i kig/CMakeLists.txt
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -75,5 +75,5 @@ src_configure() {
 	-DWITH_ALL_OPTIONS=ON
 	-DBUILD_ALL=ON
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }

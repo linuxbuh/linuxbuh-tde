@@ -83,7 +83,7 @@ src_prepare() {
 
 	edos2unix samples/exiv2json.cpp # workaround for CVE-2017-18005 patch
 
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 multilib_src_configure() {
@@ -101,11 +101,11 @@ multilib_src_configure() {
 		$(multilib_is_native_abi || echo -DEXIV2_ENABLE_TOOLS=NO)
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 multilib_src_compile() {
-	cmake-utils_src_compile
+	cmake_src_compile
 
 	if multilib_is_native_abi; then
 		use doc && emake -j1 doc
@@ -123,7 +123,7 @@ multilib_src_install_all() {
 		docinto examples
 		dodoc samples/*.cpp
 	fi
-	cmake-utils_src_install
+	cmake_src_install
 	mv ${D}/usr/share ${D}${TDEDIR}/share
 	rm -rf ${D}/usr
 	rm -rf ${D}${TDEDIR}/bin

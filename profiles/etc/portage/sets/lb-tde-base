@@ -2,3 +2,4 @@ trinity-base/tdebase-meta
 trinity-base/tde-i18n
 sys-apps/linuxbuh-tde-update-script
 trinity-apps/kkbswitch
+trinity-base/kmix

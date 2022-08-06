@@ -31,5 +31,5 @@ src_configure() {
 		-DQT_PREFIX_DIR="${TQTDIR}"
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }

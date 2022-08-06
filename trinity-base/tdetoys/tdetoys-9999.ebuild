@@ -4,7 +4,7 @@
 EAPI="7"
 
 
-inherit cmake-utils desktop flag-o-matic gnome2-utils
+inherit cmake desktop flag-o-matic gnome2-utils
 
 
 DESCRIPTION="Tux screensaver for Trinity"
@@ -83,11 +83,11 @@ src_configure() {
 		-DBUILD_ALL=ON
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 #src_install() {
-#	cmake-utils_src_install
+#	cmake_src_install
 #
 #}
 

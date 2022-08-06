@@ -3,7 +3,7 @@
 # $Id$
 EAPI="7"
 
-inherit cmake-utils desktop
+inherit cmake desktop
 
 DESCRIPTION="multimedia applications from the TDE"
 HOMEPAGE="http://trinitydesktop.org/"
@@ -95,5 +95,5 @@ src_configure() {
 	-DBUILD_TDEFILE_PLUGINS=ON
 	)
 
-	 cmake-utils_src_configure
+	 cmake_src_configure
 }

@@ -4,7 +4,7 @@
 EAPI="7"
 
 
-inherit cmake-utils desktop flag-o-matic gnome2-utils
+inherit cmake desktop flag-o-matic gnome2-utils
 
 
 DESCRIPTION="GTK style engine which uses the active TDE style to draw its widgets"
@@ -70,10 +70,10 @@ src_configure() {
 		-DSHARE_INSTALL_PREFIX="${TDEDIR}/share"
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 src_install() {
-	cmake-utils_src_install
+	cmake_src_install
 }
 

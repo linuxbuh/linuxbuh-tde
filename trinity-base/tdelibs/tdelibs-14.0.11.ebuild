@@ -3,7 +3,7 @@
 # $Id$
 EAPI="7"
 
-inherit cmake-utils  desktop flag-o-matic gnome2-utils 
+inherit cmake  desktop flag-o-matic gnome2-utils 
 
 DESCRIPTION="Trinity libraries needed by all TDE programs."
 HOMEPAGE="http://www.trinitydesktop.org/"
@@ -97,7 +97,7 @@ src_prepare() {
 	rm ${S}/mimetypes/application/x-mplayer2.desktop
 	sed -i '/x-mplayer2.desktop/d' ${S}/mimetypes/application/CMakeLists.txt
 	sed -i '/x-mplayer2.desktop/d' ${S}/mimetypes/application/Makefile.am
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -137,13 +137,13 @@ src_configure() {
 		-DWITH_ARTS=$(usex arts ON OFF )
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 src_install() {
 	unset TDE_FULL_SESSION TDEROOTHOME TDE_SESSION_UID TDEHOME TDE_MULTIHEAD
 	export LD_LIBRARY_PATH={$LD_LIBRARY_PATH}:${TDEDIR}/$(get_libdir)
-	cmake-utils_src_install
+	cmake_src_install
 
 	dodir /etc/env.d
 	# KDE implies that the install path is listed first in TDEDIRS and the usexr

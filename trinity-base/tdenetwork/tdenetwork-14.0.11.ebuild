@@ -3,7 +3,7 @@
 # $Id$
 EAPI="7"
 
-inherit cmake-utils desktop flag-o-matic gnome2-utils
+inherit cmake desktop flag-o-matic gnome2-utils
 
 DESCRIPTION="This metapackage includes a collection of network and networking related"
 HOMEPAGE="http://trinitydesktop.org/"
@@ -74,7 +74,7 @@ TDEDIR="/usr/trinity/14"
 src_prepare() {
 	eapply -p0 ${FILESDIR}/${PN}-getopts.patch
 	cp -rf ${TDEDIR}/share/tde/libtdevnc ${S}/
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -113,5 +113,5 @@ src_configure() {
 
 	)
 
-	 cmake-utils_src_configure
+	 cmake_src_configure
 }

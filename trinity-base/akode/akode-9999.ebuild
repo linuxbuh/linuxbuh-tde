@@ -3,7 +3,7 @@
 # $Id$
 EAPI="7"
 
-inherit cmake-utils desktop
+inherit cmake desktop
 
 DESCRIPTION="Audio-decoding framework"
 HOMEPAGE="http://trinitydesktop.org/"
@@ -56,7 +56,7 @@ TDEDIR="/usr/trinity/14"
 
 src_prepare() {
 	cp -rf ${TDEDIR}/share/cmake ${S}/
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 src_configure() {
@@ -79,5 +79,5 @@ src_configure() {
 
 	)
 
-	 cmake-utils_src_configure
+	 cmake_src_configure
 }

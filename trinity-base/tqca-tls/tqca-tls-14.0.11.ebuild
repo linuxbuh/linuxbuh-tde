@@ -4,7 +4,7 @@
 
 EAPI="7"
 
-inherit cmake-utils
+inherit cmake
 
 DESCRIPTION=""
 HOMEPAGE="http://trinitydesktop.org/"
@@ -46,7 +46,7 @@ TDEDIR="/usr/trinity/14"
 
 src_prepare() {
         cp -rf ${TDEDIR}/share/cmake .
-        cmake-utils_src_prepare
+        cmake_src_prepare
 }
 
 src_configure() {
@@ -56,9 +56,9 @@ src_configure() {
                 -DCMAKE_INSTALL_PREFIX=${TDEDIR}
                 -DWITH_GCC_VISIBILITY=OFF
                 -DLIB_INSTALL_DIR="${TDEDIR}/$(get_libdir)")
-        cmake-utils_src_configure
+        cmake_src_configure
 }
 
 src_install() {
-        cmake-utils_src_install
+        cmake_src_install
 }
