@@ -6,7 +6,9 @@ EAPI="7"
 
 TRINITY_MODULE_NAME="tdepim"
 TSM_EXTRACT_ALSO="libtdepim/ libemailfunctions/ libkpgp/ libkmime/ translations/"
-inherit trinity-meta-2
+inherit cmake
+
+SLOT=0
 
 DESCRIPTION="A newsreader for TDE"
 

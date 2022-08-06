@@ -5,7 +5,9 @@
 EAPI="7"
 TRINITY_MODULE_NAME="tdemultimedia"
 
-inherit trinity-meta-2
+inherit cmake
+
+SLOT=0
 
 DESCRIPTION="KDE library for CDDB"
 KEYWORDS="~amd64 ~x86"

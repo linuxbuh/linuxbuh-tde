@@ -5,7 +5,9 @@
 EAPI="7"
 TRINITY_MODULE_NAME="tdemultimedia"
 
-inherit trinity-meta-2
+inherit cmake
+
+SLOT=0
 
 DESCRIPTION="Trinity mixer GUI"
 KEYWORDS="~amd64 ~x86"

@@ -4,13 +4,14 @@
 EAPI="7"
 TRINITY_MODULE_NAME="tdemultimedia"
 
-inherit trinity-meta-2
+inherit cmake
 
 DESCRIPTION="TDE CD ripper and audio encoder frontend"
 KEYWORDS="~amd64 ~x86"
 IUSE="encode flac mp3 vorbis"
 DEPEND="~trinity-base/libkcddb-${PV}
 	media-sound/cdparanoia"
+SLOT=0
 
 # External encoders used - no optional compile-time support
 RDEPEND="${RDEPEND}

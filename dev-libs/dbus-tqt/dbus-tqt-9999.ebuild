@@ -6,7 +6,7 @@ EAPI="7"
 
 TRINITY_MODULE_TYPE="dependencies"
 TRINITY_MODULE_NAME="dbus-tqt"
-inherit trinity-base-2
+inherit cmake
 
 DESCRIPTION="D-BUS TQt bindings"
 HOMEPAGE="https://trinitydesktop.org/"

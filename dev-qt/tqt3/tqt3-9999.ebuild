@@ -6,7 +6,7 @@ EAPI="7"
 
 SRCTYPE="free" # TODO: what is it doing?
 TQTBASE="/usr/tqt3" # TODO: no eclass var, get rid of prefixing
-inherit eutils toolchain-funcs
+inherit eutils toolchain-funcs cmake
 
 if [[ ${PV} == *9999* ]]; then
 	EGIT_REPO_URI="https://mirror.git.trinitydesktop.org/gitea/TDE/tqt3"

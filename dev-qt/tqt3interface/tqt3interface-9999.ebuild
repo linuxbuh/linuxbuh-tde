@@ -6,7 +6,7 @@ EAPI="7"
 
 TRINITY_MODULE_TYPE="dependencies"
 TRINITY_MODULE_NAME="tqtinterface"
-inherit trinity-base-2
+inherit cmake eutils
 
 DESCRIPTION="Interface and abstraction library for TQt and Trinity"
 HOMEPAGE="https://trinitydesktop.org/"

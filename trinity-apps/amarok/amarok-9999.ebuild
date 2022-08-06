@@ -14,7 +14,7 @@ TRINITY_LANGS="af ar az be bg bn br ca cs cy da de el en_GB eo es
 
 TRINITY_DOC_LANGS="da de es et fr it nl pl pt pt_BR ru sv"
 TRINITY_MODULE_TYPE="applications"
-inherit trinity-base-2
+inherit cmake desktop flag-o-matic gnome2-utils
 
 DESCRIPTION="Advanced music player for TDE"
 HOMEPAGE="https://trinitydesktop.org/"
