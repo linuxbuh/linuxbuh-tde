@@ -1,5 +1,5 @@
-trinity-base/tdebase-meta
-trinity-base/tde-i18n
-sys-apps/linuxbuh-tde-update-script
-trinity-apps/kkbswitch
-trinity-base/kmix
+=trinity-base/tdebase-meta-14.0.12 **
+=trinity-base/tde-i18n-14.0.12 **
+=sys-apps/linuxbuh-tde-update-script-14.0.12 **
+=trinity-apps/kkbswitch-14.0.12 **
+=trinity-base/kmix-14.0.12 **
