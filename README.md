@@ -1,1 +1,1 @@
-The LinuxBuh Trinity Desktop Environment (LBTDE) project
+# Дистрибутив LinuxBuh Trinity Desktop Environment (LBTDE)
